@@ -1,0 +1,45 @@
+CSCI E-12 HW CSS specs
+
+*Part 1
+CSS Validation. Your CSS files should validate (CSS level 3; no errors; warnings are acceptable) with the W3C CSS Validation Service (Links to an external site.) at: http://jigsaw.w3.org/css-validator/ (Links to an external site.)
+Desired Styling. A screenshot is provided to demonstrate how the styled document might appear. It should be used as a guide only when authoring the CSS.
+The goal is not for you to determine the exact colors, padding, margins, border widths, and such, from the screenshot.
+The goal is for you to take the existing markup document and create a CSS document that will produce results that resembles the screenshot, described below:
+[X] The date and ISBN text is slightly smaller (80%) than the body text, and there is additional vertical spacing that separates the date/ISBN from the author, title, and publisher.
+[X] The publisher is in small-caps. The author names are in italics (and a different color).
+[X] The book titles are hyperlinks. Use the a:link, a:visited, a:hover, and a:active pseudo-classes in your CSS.
+[X] To place the image properly, use the CSS float property.
+[X] To keep the images "within the box", use one of the following (your choice):
+[X] Preferred: Use the "clearfix" approach by setting the overflow property.
+
+Alternatively, you are allowed to insert markup code achieve the effect of containing the book cover within the box. If you do this, I would suggest markup such as <br class="clear"/> with the corresponding class definition for "clear".
+
+*Part 2: Transforming Deprecated Markup
+You are provided an HTML 4.01 Transitional document where markup and presentation code are mixed (yuck!). Based upon the content of the provided HTML 4.01 document, you will author an HTML5 document and a CSS document that uses semantic markup and also separates markup and presentation.
+
+So with this assignment, you'll be responsible for writing the HTML5 markup as well as the CSS!
+
+old_to_new
+|-- deprecated.html
+|-- news.css
+`-- news.html
+The source document you are provided (deprecated.html) is valid HTML 4.01 Transitional, but the content and style are mixed. The task is to author a new markup document that validates as HTML5 (news.html) and author a new CSS document (news.css) to separate the presentational aspects of the page.
+
+Markup.
+[] The markup you author (news.html) should validate as HTML5 using the Nu Html Checker (Links to an external site.)
+Your markup document should not use the table element.
+You should restructure the markup of the document in other ways as well (use h1, h2, and other semantic markup; assign class and id attributes). Keep the same content, but improve the markup.
+CSS.
+CSS Validation. Your CSS files should validate (CSS level 3; no errors; warnings are acceptable) with the W3C CSS Validation Service (Links to an external site.).
+Do not use third-party CSS frameworks for this exercise (i.e. you should author all of the CSS in this part of the assignment).
+Feel free to improve upon the original 'look' of the document when you are creating your CSS.
+Suggested Strategy.
+First, examine the page (part2/deprecated.html) as rendered in a web browser (start by looking at the page in a browser, not at the deprecated markup).
+What parts of the page are there?
+Are there repeated structures of content? 
+What are the parts of these repeated structures?
+Then begin creating your XHTML document and CSS document.
+Start with a fresh markup document and move content into it as needed (as opposed to using the deprecated HTML as your starting point).
+Create the basic framework of the markup page (use id attributes for unique parts of the page). Create the repeating content structures (use class attributes for these).
+Create CSS rules for the elements, ids, and classes in your page.
+Work iteratively with your markup and styles until the page is how you want it.
