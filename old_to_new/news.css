@@ -1,1 +1,49 @@
 /* news.css */
+body{
+	background-color: #3D4D7A;
+}
+header, article {
+	max-width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	position: relative;
+}
+header, .headline {
+	font-family: helvetica,sans-serif;
+}
+header{
+	color: #FFFFFF;
+	background-color: #00207A;
+	border: 1px solid #3D4D7A;
+}
+header h1{
+	text-align: center;
+	font-size: 2em;
+}
+img{
+	padding-right: .25em;
+}
+header p{
+	font-style: italic;	
+	font-weight: bold;
+	font-size: 1.15em;
+	padding-left: 1em;
+}
+article{
+	background-color: white;
+	padding: 0em 1em;
+	border: 1px solid #3D4D7A;
+}
+.headline{
+	color: #990000;
+	font-weight: bold;
+}
+.articletext{
+}
+.readlink{
+
+}
+.posted{
+	font-style: italic;
+	font-size: .8em;
+}
